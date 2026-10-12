@@ -1,1 +1,1407 @@
 
+
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#101a32">
+
+  <meta name="description" content="Beheshta TOEFL Studio — Your personal space to prepare for TOEFL, one day at a time.">
+
+  <title>Beheshta TOEFL Studio</title>
+
+  <!-- These files will be created separately -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- ========== SIDEBAR / NAVIGATION ========== -->
+
+    <aside class="sidebar" id="sidebar">
+
+      <a class="brand" href="#home" aria-label="Beheshta TOEFL Studio home">
+
+        <span class="brand-symbol">B<span>✦</span></span>
+
+        <span class="brand-copy">
+
+          <strong>BEHESHTA</strong>
+
+          <small>TOEFL STUDIO</small>
+
+        </span>
+
+      </a>
+
+      <button class="sidebar-close icon-button" id="sidebarClose"
+
+              type="button" aria-label="Close menu">×</button>
+
+      <div class="nav-label">YOUR LEARNING SPACE</div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+
+        <a class="nav-link active" href="#home" data-nav="home">
+
+          <span class="nav-icon">⌂</span><span>خانه</span>
+
+        </a>
+
+        <a class="nav-link" href="#skills" data-nav="skills">
+
+          <span class="nav-icon">✧</span><span>چهار مهارت تافل</span>
+
+        </a>
+
+        <a class="nav-link" href="#vocabulary" data-nav="vocabulary">
+
+          <span class="nav-icon">Aa</span><span>آموزش لغات</span>
+
+        </a>
+
+        <a class="nav-link" href="#planner" data-nav="planner">
+
+          <span class="nav-icon">▦</span><span>برنامهٔ مطالعه</span>
+
+        </a>
+
+        <a class="nav-link" href="#progress" data-nav="progress">
+
+          <span class="nav-icon">↗</span><span>پیشرفت من</span>
+
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <div class="sidebar-note">
+
+          <span class="note-sparkle">✦</span>
+
+          <p>Small steps.<br>Extraordinary future.</p>
+
+          <small>One focused day at a time.</small>
+
+        </div>
+
+        <button class="baby-sidebar-button" id="openBaby"
+
+                type="button">
+
+          <span class="baby-mini-avatar">B</span>
+
+          <span>
+
+            <strong>Chat with Baby</strong>
+
+            <small>Your study companion</small>
+
+          </span>
+
+          <span class="online-dot"></span>
+
+        </button>
+
+      </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ========== MAIN AREA ========== -->
+
+    <main class="main-content" id="mainContent">
+
+      <header class="topbar">
+
+        <button class="icon-button menu-toggle" id="menuToggle"
+
+                type="button" aria-label="Open menu">☰</button>
+
+        <div class="topbar-title">
+
+          <span class="eyebrow">YOUR PERSONAL LEARNING SPACE</span>
+
+          <h1>Beheshta TOEFL Studio</h1>
+
+        </div>
+
+        <div class="topbar-actions">
+
+          <div class="streak-badge" title="Study streak">
+
+            <span>✦</span>
+
+            <span id="streakCount">0</span>
+
+            <small>DAY STREAK</small>
+
+          </div>
+
+          <button class="avatar-button" id="topBabyButton"
+
+                  type="button" aria-label="Chat with Baby">B</button>
+
+        </div>
+
+      </header>
+
+      <!-- ========== HOME ========== -->
+
+      <section class="page-section" id="home">
+
+        <div class="welcome-banner">
+
+          <div class="welcome-copy">
+
+            <span class="section-kicker">A NOTE FROM AMIR ♥</span>
+
+            <h2>Your future is worth<br class="desktop-break"> every effort.</h2>
+
+            <p class="welcome-message">
+
+              For Beheshta, the reason behind my dreams.
+
+            </p>
+
+            <p class="welcome-subtitle">
+
+              Believe in yourself. Your hard work today is building
+
+              the life you dream of tomorrow.
+
+            </p>
+
+            <button class="primary-button" id="startStudyButton"
+
+                    type="button">
+
+              <span>✦</span> Start today's study
+
+              <span class="button-arrow">←</span>
+
+            </button>
+
+          </div>
+
+          <div class="welcome-art" aria-hidden="true">
+
+            <div class="orbit orbit-one"></div>
+
+            <div class="orbit orbit-two"></div>
+
+            <div class="hero-star">✦</div>
+
+            <div class="hero-monogram">B</div>
+
+            <div class="floating-star star-one">✧</div>
+
+            <div class="floating-star star-two">✦</div>
+
+            <div class="floating-star star-three">·</div>
+
+            <div class="hero-art-label">DREAM · LEARN · ACHIEVE</div>
+
+          </div>
+
+        </div>
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">YOUR DAILY JOURNEY</span>
+
+            <h2>امروز باهم پیش می‌رویم</h2>
+
+          </div>
+
+          <span class="date-label" id="todayDate">Today's learning</span>
+
+        </div>
+
+        <div class="stats-grid">
+
+          <article class="stat-card">
+
+            <span class="stat-icon icon-blue">◷</span>
+
+            <span class="stat-label">زمان مطالعه</span>
+
+            <strong class="stat-value" id="totalStudyTime">0 min</strong>
+
+            <small>کل زمان ثبت‌شده</small>
+
+          </article>
+
+          <article class="stat-card">
+
+            <span class="stat-icon icon-purple">✧</span>
+
+            <span class="stat-label">تمرین‌های تکمیل‌شده</span>
+
+            <strong class="stat-value" id="completedExercises">0</strong>
+
+            <small>قدم‌های رو به جلو</small>
+
+          </article>
+
+          <article class="stat-card">
+
+            <span class="stat-icon icon-teal">Aa</span>
+
+            <span class="stat-label">لغات آموخته‌شده</span>
+
+            <strong class="stat-value" id="learnedWords">0</strong>
+
+            <small>واژه‌های جدید انگلیسی</small>
+
+          </article>
+
+          <article class="stat-card">
+
+            <span class="stat-icon icon-gold">◎</span>
+
+            <span class="stat-label">هدف امروز</span>
+
+            <strong class="stat-value" id="dailyGoalProgress">0%</strong>
+
+            <small>از برنامهٔ روزانه</small>
+
+          </article>
+
+        </div>
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">YOUR NEXT STEP</span>
+
+            <h2>از کجا شروع کنیم؟</h2>
+
+          </div>
+
+        </div>
+
+        <div class="quick-grid">
+
+          <button class="quick-card" type="button" data-open-skill="reading">
+
+            <span class="quick-icon reading-icon">▤</span>
+
+            <span class="quick-card-copy">
+
+              <strong>Reading</strong>
+
+              <small>متن‌خوانی و درک مطلب</small>
+
+            </span>
+
+            <span class="quick-arrow">←</span>
+
+          </button>
+
+          <button class="quick-card" type="button" data-open-skill="listening">
+
+            <span class="quick-icon listening-icon">♫</span>
+
+            <span class="quick-card-copy">
+
+              <strong>Listening</strong>
+
+              <small>شنیدن و درک صوت</small>
+
+            </span>
+
+            <span class="quick-arrow">←</span>
+
+          </button>
+
+          <button class="quick-card" type="button" data-open-skill="speaking">
+
+            <span class="quick-icon speaking-icon">◉</span>
+
+            <span class="quick-card-copy">
+
+              <strong>Speaking</strong>
+
+              <small>تمرین صحبت‌کردن</small>
+
+            </span>
+
+            <span class="quick-arrow">←</span>
+
+          </button>
+
+          <button class="quick-card" type="button" data-open-skill="writing">
+
+            <span class="quick-icon writing-icon">✎</span>
+
+            <span class="quick-card-copy">
+
+              <strong>Writing</strong>
+
+              <small>نوشتن و اصلاح متن</small>
+
+            </span>
+
+            <span class="quick-arrow">←</span>
+
+          </button>
+
+        </div>
+
+        <div class="home-bottom-grid">
+
+          <article class="content-card daily-card">
+
+            <div class="card-heading">
+
+              <div>
+
+                <span class="section-kicker">FRESH EVERY DAY</span>
+
+                <h3>برنامهٔ امروز</h3>
+
+              </div>
+
+              <span class="pill-badge" id="dailyPlanStatus">Ready</span>
+
+            </div>
+
+            <p class="muted-text">
+
+              هر روز تمرین‌های تازه را شروع کن و پیشرفت خود را دنبال کن.
+
+            </p>
+
+            <div class="daily-plan-list" id="dailyPlanList">
+
+              <div class="empty-state">
+
+                <span>✧</span>
+
+                <p>تمرین‌های امروز پس از بارگذاری محتوای آموزشی نمایش داده می‌شوند.</p>
+
+              </div>
+
+            </div>
+
+            <button class="secondary-button" id="viewAllSkills"
+
+                    type="button">دیدن تمام تمرین‌ها ←</button>
+
+          </article>
+
+          <article class="content-card focus-card">
+
+            <span class="section-kicker">A MOMENT FOR YOU</span>
+
+            <div class="focus-decoration">✦</div>
+
+            <h3>یک قدم کوچک هم ارزشمند است.</h3>
+
+            <p>
+
+              لازم نیست امروز همه‌چیز را کامل یاد بگیری.
+
+              فقط با تمرکز شروع کن و به خودت فرصت بده.
+
+            </p>
+
+            <button class="text-button" id="focusBabyButton" type="button">
+
+              صحبت با Baby <span>←</span>
+
+            </button>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- ========== FOUR TOEFL SKILLS ========== -->
+
+      <section class="page-section" id="skills">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">TOEFL PRACTICE CENTER</span>
+
+            <h2>چهار مهارت اصلی تافل</h2>
+
+            <p class="muted-text">
+
+              تمرین‌های متنوع، پاسخ‌دهی و بازخورد برای هر مهارت.
+
+            </p>
+
+          </div>
+
+          <span class="pill-badge">4 SKILLS</span>
+
+        </div>
+
+        <div class="skill-tabs" role="tablist" aria-label="TOEFL skills">
+
+          <button class="skill-tab active" type="button" role="tab"
+
+                  aria-selected="true" data-skill-tab="reading">Reading</button>
+
+          <button class="skill-tab" type="button" role="tab"
+
+                  aria-selected="false" data-skill-tab="listening">Listening</button>
+
+          <button class="skill-tab" type="button" role="tab"
+
+                  aria-selected="false" data-skill-tab="speaking">Speaking</button>
+
+          <button class="skill-tab" type="button" role="tab"
+
+                  aria-selected="false" data-skill-tab="writing">Writing</button>
+
+        </div>
+
+        <div class="content-card exercise-card">
+
+          <div class="exercise-topline">
+
+            <div>
+
+              <span class="section-kicker" id="skillEyebrow">READING PRACTICE</span>
+
+              <h3 id="skillTitle">Reading comprehension</h3>
+
+            </div>
+
+            <span class="question-counter" id="questionCounter">Practice</span>
+
+          </div>
+
+          <div class="exercise-meta">
+
+            <span id="exerciseDifficulty">Difficulty: Intermediate</span>
+
+            <span id="exerciseEstimatedTime">Suggested time: 10 min</span>
+
+          </div>
+
+          <!-- Reading content -->
+
+          <div class="skill-panel active" id="readingPanel" data-skill-panel="reading">
+
+            <div class="passage-box">
+
+              <h4 id="readingPassageTitle">Reading passage</h4>
+
+              <div class="passage-content" id="readingPassage">
+
+                متن تمرین Reading در این بخش نمایش داده می‌شود.
+
+              </div>
+
+            </div>
+
+            <div class="question-box">
+
+              <h4 id="readingQuestion">Question</h4>
+
+              <div class="answer-options" id="readingOptions"></div>
+
+            </div>
+
+          </div>
+
+          <!-- Listening content -->
+
+          <div class="skill-panel" id="listeningPanel"
+
+               data-skill-panel="listening" hidden>
+
+            <div class="audio-player-card">
+
+              <span class="audio-art">♫</span>
+
+              <div class="audio-player-copy">
+
+                <strong id="listeningAudioTitle">Listening practice</strong>
+
+                <p id="listeningAudioDescription">
+
+                  فایل صوتی تمرین در این بخش قرار می‌گیرد.
+
+                </p>
+
+              </div>
+
+              <audio id="listeningAudio" controls preload="none">
+
+                مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+
+              </audio>
+
+            </div>
+
+            <div class="question-box">
+
+              <h4 id="listeningQuestion">Listening question</h4>
+
+              <div class="answer-options" id="listeningOptions"></div>
+
+            </div>
+
+          </div>
+
+          <!-- Speaking content -->
+
+          <div class="skill-panel" id="speakingPanel"
+
+               data-skill-panel="speaking" hidden>
+
+            <div class="speaking-prompt">
+
+              <span class="speaking-prompt-icon">◉</span>
+
+              <div>
+
+                <span class="section-kicker">SPEAKING PROMPT</span>
+
+                <h4 id="speakingPrompt">Describe your answer in English.</h4>
+
+                <p id="speakingInstructions">
+
+                  برای آماده‌سازی و صحبت‌کردن وقت بگذار.
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="recording-controls">
+
+              <label for="speakingPreparation">Preparation time</label>
+
+              <select id="speakingPreparation">
+
+                <option value="15">15 seconds</option>
+
+                <option value="30" selected>30 seconds</option>
+
+                <option value="45">45 seconds</option>
+
+              </select>
+
+              <label for="speakingDuration">Speaking time</label>
+
+              <select id="speakingDuration">
+
+                <option value="45">45 seconds</option>
+
+                <option value="60" selected>60 seconds</option>
+
+                <option value="90">90 seconds</option>
+
+              </select>
+
+            </div>
+
+            <div class="recording-actions">
+
+              <button class="primary-button" id="startRecording" type="button">
+
+                <span>●</span> Start recording
+
+              </button>
+
+              <button class="secondary-button" id="stopRecording"
+
+                      type="button" disabled>Stop recording</button>
+
+            </div>
+
+            <p class="muted-text" id="recordingStatus" aria-live="polite">
+
+              برای ضبط صدا باید اجازهٔ استفاده از میکروفون را بدهی.
+
+            </p>
+
+            <audio id="speakingPlayback" controls hidden></audio>
+
+            <a id="speakingDownload" hidden>Download recording</a>
+
+          </div>
+
+          <!-- Writing content -->
+
+          <div class="skill-panel" id="writingPanel"
+
+               data-skill-panel="writing" hidden>
+
+            <div class="writing-prompt">
+
+              <span class="section-kicker">WRITING TASK</span>
+
+              <h4 id="writingPrompt">Write your response in English.</h4>
+
+              <p id="writingInstructions">
+
+                پاسخ خود را با جمله‌های روشن و ساختار مناسب بنویس.
+
+              </p>
+
+            </div>
+
+            <label for="writingAnswer">Your response</label>
+
+            <textarea id="writingAnswer" rows="8"
+
+                      placeholder="Start writing your answer here..."></textarea>
+
+            <div class="writing-footer">
+
+              <span id="writingWordCount">0 words</span>
+
+              <button class="primary-button" id="checkWriting"
+
+                      type="button">Review my writing</button>
+
+            </div>
+
+            <div class="feedback-box" id="writingFeedback" hidden
+
+                 aria-live="polite"></div>
+
+          </div>
+
+          <!-- Shared answer feedback -->
+
+          <div class="feedback-box" id="answerFeedback" hidden
+
+               aria-live="polite"></div>
+
+          <div class="exercise-actions" id="quizActions">
+
+            <button class="secondary-button" id="showHint" type="button">
+
+              Need a hint?
+
+            </button>
+
+            <button class="primary-button" id="checkAnswer" type="button">
+
+              Check answer
+
+            </button>
+
+            <button class="primary-button" id="nextExercise"
+
+                    type="button" hidden>Next exercise →</button>
+
+          </div>
+
+          <div class="feedback-box" id="hintFeedback" hidden
+
+               aria-live="polite"></div>
+
+        </div>
+
+      </section>
+
+      <!-- ========== VOCABULARY ========== -->
+
+      <section class="page-section" id="vocabulary">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">BUILD YOUR VOCABULARY</span>
+
+            <h2>کلمات امروز</h2>
+
+            <p class="muted-text">
+
+              معنی دری، تلفظ، مثال انگلیسی و مرور لغات دشوار.
+
+            </p>
+
+          </div>
+
+          <span class="pill-badge" id="vocabularyDailyLabel">DAILY WORDS</span>
+
+        </div>
+
+        <div class="content-card vocabulary-card">
+
+          <div class="vocabulary-progress">
+
+            <span>Daily vocabulary progress</span>
+
+            <strong id="vocabularyProgressText">0 / 0</strong>
+
+          </div>
+
+          <div class="progress-track">
+
+            <div class="progress-fill" id="vocabularyProgressBar"></div>
+
+          </div>
+
+          <div class="vocabulary-list" id="vocabularyList">
+
+            <div class="empty-state">
+
+              <span>Aa</span>
+
+              <p>لغات روزانه از فایل محتوای آموزشی بارگذاری می‌شوند.</p>
+
+            </div>
+
+          </div>
+
+          <button class="secondary-button" id="reviewDifficultWords"
+
+                  type="button">Review difficult words</button>
+
+        </div>
+
+      </section>
+
+      <!-- ========== PERSONAL PLANNER ========== -->
+
+      <section class="page-section" id="planner">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">YOUR PERSONAL PLAN</span>
+
+            <h2>برنامهٔ مطالعهٔ من</h2>
+
+            <p class="muted-text">
+
+              برنامه‌ات را بر اساس وقت و هدف خودت تنظیم کن.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="content-card planner-card">
+
+          <form id="plannerForm">
+
+            <div class="form-grid">
+
+              <div class="form-field">
+
+                <label for="studyMinutes">وقت روزانه برای مطالعه</label>
+
+                <select id="studyMinutes" name="studyMinutes">
+
+                  <option value="30">30 minutes</option>
+
+                  <option value="60" selected>1 hour</option>
+
+                  <option value="90">1.5 hours</option>
+
+                  <option value="120">2 hours</option>
+
+                  <option value="180">3 hours</option>
+
+                </select>
+
+              </div>
+
+              <div class="form-field">
+
+                <label for="targetExamDate">Target TOEFL date</label>
+
+                <input type="date" id="targetExamDate" name="targetExamDate">
+
+              </div>
+
+              <div class="form-field">
+
+                <label for="currentLevel">Current English level</label>
+
+                <select id="currentLevel" name="currentLevel">
+
+                  <option value="beginner">Beginner</option>
+
+                  <option value="intermediate" selected>Intermediate</option>
+
+                  <option value="upper-intermediate">Upper-intermediate</option>
+
+                  <option value="advanced">Advanced</option>
+
+                </select>
+
+              </div>
+
+              <div class="form-field">
+
+                <label for="targetScore">Target score</label>
+
+                <select id="targetScore" name="targetScore">
+
+                  <option value="80">80+</option>
+
+                  <option value="90">90+</option>
+
+                  <option value="100" selected>100+</option>
+
+                  <option value="110">110+</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+            <fieldset class="weak-skills-field">
+
+              <legend>Which skills need more attention?</legend>
+
+              <label><input type="checkbox" name="weakSkills" value="reading"> Reading</label>
+
+              <label><input type="checkbox" name="weakSkills" value="listening"> Listening</label>
+
+              <label><input type="checkbox" name="weakSkills" value="speaking"> Speaking</label>
+
+              <label><input type="checkbox" name="weakSkills" value="writing"> Writing</label>
+
+            </fieldset>
+
+            <button class="primary-button" type="submit">
+
+              Create my study plan
+
+            </button>
+
+          </form>
+
+          <div class="planner-results" id="plannerResults" hidden>
+
+            <div class="card-heading">
+
+              <h3>Your personalized plan</h3>
+
+              <button class="text-button" id="editPlanner" type="button">
+
+                Edit plan
+
+              </button>
+
+            </div>
+
+            <div id="plannerSchedule"></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ========== PROGRESS ========== -->
+
+      <section class="page-section" id="progress">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">EVERY STEP COUNTS</span>
+
+            <h2>پیشرفت من</h2>
+
+            <p class="muted-text">
+
+              تلاش‌های خود را ببین و برای ادامه انگیزه بگیر.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="progress-grid">
+
+          <article class="content-card progress-card">
+
+            <span class="stat-icon icon-blue">◷</span>
+
+            <span class="stat-label">Total study time</span>
+
+            <strong class="stat-value" id="progressStudyTime">0 min</strong>
+
+          </article>
+
+          <article class="content-card progress-card">
+
+            <span class="stat-icon icon-purple">✓</span>
+
+            <span class="stat-label">Exercises completed</span>
+
+            <strong class="stat-value" id="progressExercises">0</strong>
+
+          </article>
+
+          <article class="content-card progress-card">
+
+            <span class="stat-icon icon-teal">Aa</span>
+
+            <span class="stat-label">Words learned</span>
+
+            <strong class="stat-value" id="progressWords">0</strong>
+
+          </article>
+
+        </div>
+
+        <article class="content-card">
+
+          <div class="card-heading">
+
+            <div>
+
+              <span class="section-kicker">RECENT ACTIVITY</span>
+
+              <h3>فعالیت‌های اخیر</h3>
+
+            </div>
+
+          </div>
+
+          <div id="activityHistory">
+
+            <div class="empty-state">
+
+              <span>↗</span>
+
+              <p>پس از شروع مطالعه، فعالیت‌هایت اینجا ثبت می‌شوند.</p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </section>
+
+      <!-- ========== STUDY TIMER ========== -->
+
+      <section class="page-section" id="studyTimerSection">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">FOCUSED STUDY</span>
+
+            <h2>تایمر مطالعه</h2>
+
+          </div>
+
+        </div>
+
+        <div class="content-card timer-card">
+
+          <div class="timer-orb" id="timerOrb">
+
+            <span class="timer-label">TIME REMAINING</span>
+
+            <strong id="timerDisplay">60:00</strong>
+
+            <small id="timerStatus">Ready to focus?</small>
+
+          </div>
+
+          <div class="timer-settings">
+
+            <label for="timerMinutes">مدت مطالعه</label>
+
+            <select id="timerMinutes">
+
+              <option value="15">15 minutes</option>
+
+              <option value="25">25 minutes</option>
+
+              <option value="30">30 minutes</option>
+
+              <option value="45">45 minutes</option>
+
+              <option value="60" selected>60 minutes</option>
+
+              <option value="90">90 minutes</option>
+
+              <option value="120">120 minutes</option>
+
+            </select>
+
+          </div>
+
+          <div class="timer-actions">
+
+            <button class="primary-button" id="timerStart" type="button">
+
+              Start study
+
+            </button>
+
+            <button class="secondary-button" id="timerPause"
+
+                    type="button" disabled>Pause</button>
+
+            <button class="secondary-button" id="timerReset"
+
+                    type="button">Reset</button>
+
+          </div>
+
+          <p class="muted-text" id="timerMessage" aria-live="polite">
+
+            زمان مناسب را انتخاب کن؛ Baby برای شروع آماده است.
+
+          </p>
+
+        </div>
+
+      </section>
+
+      <footer class="app-footer">
+
+        <span class="footer-mark">B✦</span>
+
+        <p>Made with love, for a future full of possibilities.</p>
+
+        <span>BEHESHTA TOEFL STUDIO</span>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- ========== BABY FLOATING COMPANION ========== -->
+
+  <button class="baby-floating-button" id="babyFloatingButton"
+
+          type="button" aria-label="Talk to Baby">
+
+    <span class="baby-aura"></span>
+
+    <span class="baby-character">
+
+      <span class="baby-antenna"></span>
+
+      <span class="baby-face">
+
+        <span class="baby-eye"></span>
+
+        <span class="baby-eye"></span>
+
+        <span class="baby-smile"></span>
+
+      </span>
+
+      <span class="baby-body">B</span>
+
+    </span>
+
+    <span class="baby-status-dot"></span>
+
+  </button>
+
+  <!-- Baby's message bubble -->
+
+  <aside class="baby-nudge" id="babyNudge" hidden aria-live="polite">
+
+    <button class="nudge-close" id="nudgeClose" type="button"
+
+            aria-label="Close message">×</button>
+
+    <div class="nudge-heading">
+
+      <span class="baby-mini-avatar">B</span>
+
+      <div>
+
+        <strong>Baby</strong>
+
+        <small>Your little study companion</small>
+
+      </div>
+
+    </div>
+
+    <p id="babyNudgeMessage">
+
+      بهشته جانم، خسته نشدی؟ برو برات یه چایی یا قهوه بگیر که آروم شی. مشکلی در درس‌ها نداری؟
+
+    </p>
+
+    <div class="nudge-actions">
+
+      <button class="primary-button" id="nudgeReply" type="button">
+
+        جواب Baby را بده
+
+      </button>
+
+      <button class="text-button" id="nudgeLater" type="button">
+
+        بعداً
+
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- ========== BABY CHAT PANEL ========== -->
+
+  <section class="baby-chat-panel" id="babyChatPanel"
+
+           role="dialog" aria-modal="false"
+
+           aria-labelledby="babyChatTitle" hidden>
+
+    <header class="baby-chat-header">
+
+      <div class="baby-chat-profile">
+
+        <span class="baby-mini-avatar">B</span>
+
+        <div>
+
+          <h2 id="babyChatTitle">Chat with Baby</h2>
+
+          <small><span class="online-dot"></span> Your study companion</small>
+
+        </div>
+
+      </div>
+
+      <button class="icon-button" id="closeBabyChat" type="button"
+
+              aria-label="Close chat">×</button>
+
+    </header>
+
+    <div class="baby-chat-welcome">
+
+      <span class="baby-welcome-icon">✦</span>
+
+      <strong>سلام بهشته جانم! 💜</strong>
+
+      <p>
+
+        من Baby هستم. می‌توانی دربارهٔ درس‌ها، کار با سایت یا هر مشکلی
+
+        در مسیر یادگیری‌ات با من صحبت کنی.
+
+      </p>
+
+    </div>
+
+    <div class="baby-chat-messages" id="babyChatMessages"
+
+         aria-live="polite" aria-relevant="additions">
+
+      <div class="chat-message assistant-message">
+
+        <span class="chat-avatar">B</span>
+
+        <div class="chat-bubble">
+
+          بهشته جانم، خوش آمدی! امروز در کدام بخش کمکت کنم؟ 💜
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="baby-quick-replies" id="babyQuickReplies">
+
+      <button type="button" data-baby-prompt="چطور از بخش‌های سایت استفاده کنم؟">
+
+        راهنمای سایت
+
+      </button>
+
+      <button type="button" data-baby-prompt="در تمرین تافل مشکل دارم. کمکم کن.">
+
+        کمک در درس‌ها
+
+      </button>
+
+      <button type="button" data-baby-prompt="می‌خواهم یک استراحت کوتاه کنم.">
+
+        استراحت کوتاه
+
+      </button>
+
+    </div>
+
+    <form class="baby-chat-form" id="babyChatForm">
+
+      <label class="sr-only" for="babyChatInput">Message Baby</label>
+
+      <textarea id="babyChatInput" rows="1" maxlength="2000"
+
+                placeholder="پیامت را برای Baby بنویس..."
+
+                required></textarea>
+
+      <button class="chat-send-button" id="babyChatSend"
+
+              type="submit" aria-label="Send message">➤</button>
+
+    </form>
+
+    <p class="chat-footer-note">
+
+      Baby can guide you through the website and your study activities.
+
+    </p>
+
+  </section>
+
+  <!-- ========== STUDY SESSION START DIALOG ========== -->
+
+  <dialog class="study-dialog" id="studyStartDialog">
+
+    <div class="dialog-decoration">✦</div>
+
+    <button class="dialog-close icon-button" id="closeStudyDialog"
+
+            type="button" aria-label="Close dialog">×</button>
+
+    <span class="section-kicker">YOUR FOCUS SESSION</span>
+
+    <h2>بهشته جانم، آماده‌ای؟</h2>
+
+    <p>
+
+      قبل از شروع، مدت مطالعه‌ات را انتخاب کن.
+
+      Baby پایان زمان را به تو یادآوری می‌کند.
+
+    </p>
+
+    <label for="sessionMinutes">Study duration</label>
+
+    <select id="sessionMinutes">
+
+      <option value="15">15 minutes</option>
+
+      <option value="25">25 minutes</option>
+
+      <option value="30">30 minutes</option>
+
+      <option value="45">45 minutes</option>
+
+      <option value="60" selected>1 hour</option>
+
+      <option value="90">1.5 hours</option>
+
+      <option value="120">2 hours</option>
+
+    </select>
+
+    <label for="sessionSkill">What will you study?</label>
+
+    <select id="sessionSkill">
+
+      <option value="reading">Reading</option>
+
+      <option value="listening">Listening</option>
+
+      <option value="speaking">Speaking</option>
+
+      <option value="writing">Writing</option>
+
+      <option value="vocabulary">Vocabulary</option>
+
+      <option value="mixed" selected>Mixed practice</option>
+
+    </select>
+
+    <button class="primary-button dialog-start-button"
+
+            id="confirmStudyStart" type="button">
+
+      شروع مطالعه با Baby ✦
+
+    </button>
+
+  </dialog>
+
+  <!-- ========== SESSION COMPLETE DIALOG ========== -->
+
+  <dialog class="study-dialog completion-dialog" id="studyCompleteDialog">
+
+    <div class="completion-icon">✓</div>
+
+    <span class="section-kicker">SESSION COMPLETED</span>
+
+    <h2>آفرین بهشته جانم! 💜</h2>
+
+    <p>زمان درس امروزت تمام شد، موفق باشی.</p>
+
+    <p>حالا وقت آرامش و استراحت است. کمی آب بنوش و به خودت فرصت بده.</p>
+
+    <div class="completion-summary" id="completionSummary">
+
+      جلسهٔ مطالعه‌ات به پایان رسید.
+
+    </div>
+
+    <button class="primary-button" id="finishStudyButton" type="button">
+
+      پایان و استراحت
+
+    </button>
+
+  </dialog>
+
+  <!-- Keep these scripts in this order.
+
+       data.js defines the learning content.
+
+       app.js connects the interface and its functionality. -->
+
+  <script src="data.js" defer></script>
+
+  <script src="app.js" defer></script>
+
+</body>
+
+</html>
